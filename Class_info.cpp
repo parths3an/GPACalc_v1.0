@@ -52,6 +52,9 @@ string Class_info::doubleTo_string(double db1)
 /*
 Super HOT: So, the right side of the << operator has to be a string
 or an array of a character.
+In order to print the element of this class, you can jsut create vector in the child class
+and use << operator to display the value of the member function of the the class_info class
+in the vector.
 */
 
 std::ostream& operator<<(std::ostream& out,Class_info &ciObj)

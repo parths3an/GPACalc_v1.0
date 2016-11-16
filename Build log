@@ -1,7 +1,24 @@
 11/15/2016:
 Class_info.cpp
 
+Problem 3: (Next thing to implement)
+Now, Implement the logic of the calculation which works for all the elements in the vector.
+
+Problem 2:
+Need to create a vector and a function to store and print the vector of class_info objects and it's class. I was not able to a create it within the Class_info class as a member fucntion. So, I need to changed the design the way I did. One thing I discoveres is thatm you can't use overloaded operator within the class definition. It has to be a class oustside of the Class_info class's definition. 
+
+Solution: 
+Just create a vector of the Class_info class whereever you need to print the elements saved in it.
+So for as of now, just use the << to print the value of the Class_info vector and object.
+
+Implementatinf Solution:
+Just created a vector in the main file and used << to print the value of the Class_info object at that location. 
+
+NOTICE:
+You << operator will print the value of all the member variables of Class_info class for a given Class_info object. So need to worring about how to print each member variable. 
+----------------------------------------------------------------------
 Problem 1:(Resolved) 
+----------------------------------------------------------------------
 Checked the operator overloading. The overlaoding only works with the string types on right side. But it works on all types on te main version(GPACalc). 
 Need to fix the operator overload. It should be able to printout all the types and concatinate with other types as well. 
 
