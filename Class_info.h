@@ -1,6 +1,7 @@
 #ifndef CLASS_INFO_H
 #define CLASS_INFO_H
 #include<string>
+#include<vector>
 
 using namespace std;
 class Class_info
@@ -25,6 +26,10 @@ class Class_info
 
         //<< operator overaloding
        friend std::ostream& operator<<(std::ostream&,Class_info &);
+
+    protected:
+    vector<Class_info>classInfo_vector;
+
 
     private:
     string class_name;

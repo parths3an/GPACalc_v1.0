@@ -1,7 +1,7 @@
 11/15/2016:
 Class_info.cpp
 
-Problem: 
+Problem 1:(Resolved) 
 Checked the operator overloading. The overlaoding only works with the string types on right side. But it works on all types on te main version(GPACalc). 
 Need to fix the operator overload. It should be able to printout all the types and concatinate with other types as well. 
 
@@ -13,3 +13,5 @@ Implementing the Solution:
 It worked as expected. Just created a function doubleTo_string() which converts the double value in to string so, the all the get function returns a string. 
 
 For the calculation purpose, you can create new functions which returns a double or just cast te output of the get function to doubles. 
+
+
