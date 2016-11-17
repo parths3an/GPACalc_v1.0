@@ -1,17 +1,34 @@
-11/15/2016:
-Class_info.cpp
+----------------------------------------------------------------------
+Project Done! 
+----------------------------------------------------------------------
+11/16/2016
+Implementation of the initial version is done. The logic developed in this Subproject will be used in the main GPA_Calc Project.
 
-Problem 3: (Next thing to implement)
+11/16/2016:
+----------------------------------------------------------------------
+Problem 3:(Resolved) 
+----------------------------------------------------------------------
 Now, Implement the logic of the calculation which works for all the elements in the vector.
 
-Problem 2:
-Need to create a vector and a function to store and print the vector of class_info objects and it's class. I was not able to a create it within the Class_info class as a member fucntion. So, I need to changed the design the way I did. One thing I discoveres is thatm you can't use overloaded operator within the class definition. It has to be a class oustside of the Class_info class's definition. 
+Initial Solution: 
+Created a vector to save the information of the added classes, such as the total units and recivivedCredits up to any time in the process. This way when you add a new object of Class_info, the run time to calculate the GPA will be O(1), ratharn than being O(n). (The run time to calculate the GPA if we use vectors, will be O(n)). 
+
+Implemented Solution: 
+Created a template for Calculating the GPA. It has runtime of O(n). We are not keeping track of previus values at this point to reduce the complexity of the implementation. Will introduce in the main Project.
+Currently, it is slow but won't have problem unless we ahve thosnads of Class_info objects, which will nevet happend in the case of any student.
+
+11/15/2016:
+Class_info.cpp
+----------------------------------------------------------------------
+Problem 2:(Resolved) 
+----------------------------------------------------------------------
+Need to create a vector and a function to store and print the vector of class_info objects and it's class. I was not able to a create it within the Class_info class as a member fucntion. So, I need to changed the design the way I did. One thing I discoveres is that you can't use overloaded operator within the class definition. It has to be a class oustside of the Class_info class's definition. 
 
 Solution: 
 Just create a vector of the Class_info class whereever you need to print the elements saved in it.
 So for as of now, just use the << to print the value of the Class_info vector and object.
 
-Implementatinf Solution:
+Implementating Solution:
 Just created a vector in the main file and used << to print the value of the Class_info object at that location. 
 
 NOTICE:
