@@ -27,13 +27,12 @@ class Class_info
         //To convert the values values to double for the Calculation functions.
         double stringTo_double(string);
 
+        //To get the value of member in double formate.
+        double getCunitsDouble();
+        double getCgradeDouble();
 
         //<< operator overaloding
-       friend std::ostream& operator<<(std::ostream&,Class_info &);
-
-    protected:
-    vector<Class_info>classInfo_vector;
-
+        friend std::ostream& operator<<(std::ostream&,Class_info &);
 
     private:
     string class_name;

@@ -32,16 +32,19 @@
 	<string>
 	<vector>
 
-1479259409 source:/home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/Class_info.cpp
+1479370146 source:/home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/Class_info.cpp
 	"Class_info.h"
 	<sstream>
 	<vector>
+	<iostream>
+	<string>
+	<cstdlib>
 
-1479353464 /home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/Class_info.h
+1479370422 /home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/Class_info.h
 	<string>
 	<vector>
 
-1479206823 source:/home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/main.cpp
+1479370377 source:/home/kingcobra93/Desktop/CodeBlocks_Projects/GPACalc_v1.0_local_version/main.cpp
 	<iostream>
 	<iostream>
 	"Class_info.h"

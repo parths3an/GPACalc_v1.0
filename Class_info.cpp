@@ -41,16 +41,51 @@ string Class_info::getCgrade()
 string Class_info::getCunits()
 {
     return doubleTo_string(class_units);
-
 }
 
+double Class_info::getCunitsDouble()
+{
+    return class_units;
+}
+
+double Class_info::getCgradeDouble()
+{
+    string tempGrade;
+    tempGrade = class_grade;
+
+    if(tempGrade == "A"  || tempGrade == "a")
+    {
+     return 4.0;
+    }
+    else if(tempGrade == "B" || tempGrade == "b")
+    {
+     return 3.0;
+    }
+    else if(tempGrade == "C"  || tempGrade == "c")
+    {
+     return 2.0;
+    }
+    else if(tempGrade == "D" || tempGrade == "d")
+    {
+    return 1.0;
+    }
+    else if (tempGrade == "F" || tempGrade == "f")
+    {
+     return 0.0;
+    }
+    else
+    {
+    //To check for wrong grade input
+    return -99999; //To show the wrong user input.
+    }
+}                             //End fun def.
 
 
 string Class_info::doubleTo_string(double db1)
 {
     ostringstream doubletoString;
     doubletoString << db1;
-    string temp_string = doubletoString.str();
+    string temp_string = doubletoString.str(); //Using inbuilt function.
     return temp_string;
 }
 
