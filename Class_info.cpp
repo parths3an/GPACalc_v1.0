@@ -1,6 +1,11 @@
 #include "Class_info.h"
-#include <sstream>   //will allow you to use use ostringstream
+#include<sstream>   //will allow you to use use ostringstream
 #include<vector>
+#include<iostream>  //For standard stod function.
+#include<string>
+#include<cstdlib>
+
+
 
 using namespace std;
 
@@ -48,6 +53,16 @@ string Class_info::doubleTo_string(double db1)
     string temp_string = doubletoString.str();
     return temp_string;
 }
+
+
+double stringTo_double(string s1)
+{
+//Using standard library function to convert from string to a double.
+s1="3.5";
+double temp_double = atof("3.5");
+return temp_double;
+}
+
 
 /*
 Super HOT: So, the right side of the << operator has to be a string

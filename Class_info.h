@@ -24,6 +24,10 @@ class Class_info
         //To convert the double values to String for the overloaded operator
         string doubleTo_string(double);
 
+        //To convert the values values to double for the Calculation functions.
+        double stringTo_double(string);
+
+
         //<< operator overaloding
        friend std::ostream& operator<<(std::ostream&,Class_info &);
 
